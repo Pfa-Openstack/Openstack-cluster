@@ -13,7 +13,7 @@ controller        ansible_ssh_user=vagrant ansible_become=True ansible_private_k
 controller        ansible_ssh_user=vagrant ansible_become=True ansible_private_key_file=/home/vagrant/.ssh/controller.pem
 
 [compute]
-compute1        ansible_ssh_user=vagrant ansible_become=True ansible_private_key_file=/home/vagrant/.ssh/compute1.pem
+controller        ansible_ssh_user=vagrant ansible_become=True ansible_private_key_file=/home/vagrant/.ssh/controller.pem
 
 [monitoring]
 controller        ansible_ssh_user=vagrant ansible_become=True ansible_private_key_file=/home/vagrant/.ssh/controller.pem
@@ -24,7 +24,7 @@ controller        ansible_ssh_user=vagrant ansible_become=True ansible_private_k
 #compute01 neutron_external_interface=eth0 api_interface=em1 tunnel_interface=em1
 
 [storage]
-controller        ansible_ssh_user=vagrant ansible_become=True ansible_private_key_file=/home/vagrant/.ssh/controller.pem
+storage        ansible_ssh_user=vagrant ansible_become=True ansible_private_key_file=/home/vagrant/.ssh/storage.pem
 
 [deployment]
 localhost       ansible_connection=local

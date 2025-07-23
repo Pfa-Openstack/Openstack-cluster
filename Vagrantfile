@@ -16,7 +16,7 @@ servers = [
     :script => "sh /vagrant/setups/controller.sh"
   },
   {
-    :hostname => "compute1",
+    :hostname => "storage",
     :box => "bento/ubuntu-24.04",
     :ram => 2048,
     :cpu => 1,
